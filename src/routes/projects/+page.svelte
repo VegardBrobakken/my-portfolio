@@ -1,17 +1,24 @@
+<script context="module"></script>
+
 <script lang="ts">
   import ProjectModule from "../../modules/projectmodule";
+  export const prerender = true;
 
   const projects = ProjectModule.getAll();
-  
+
   let userSearch = "";
-  let sortOrder = "newest"; 
-  
-  $: filteredProjects = projects.filter(project =>
-    project.name.toLowerCase().includes(userSearch.toLowerCase()) || 
-    project.description.toLowerCase().includes(userSearch.toLowerCase())
+  let sortOrder = "newest";
+
+  $: filteredProjects = projects.filter(
+    (project) =>
+      project.name.toLowerCase().includes(userSearch.toLowerCase()) ||
+      project.description.toLowerCase().includes(userSearch.toLowerCase())
   );
-  
-  $: sortedProjects = sortOrder === "newest" ? [...filteredProjects].reverse() : [...filteredProjects];
+
+  $: sortedProjects =
+    sortOrder === "newest"
+      ? [...filteredProjects].reverse()
+      : [...filteredProjects];
 </script>
 
 <section class="mt-16 w-4/5 mx-auto">
@@ -19,14 +26,16 @@
     <div>
       <h2 class="uppercase text-xl">Recent projects</h2>
     </div>
-    <div class="flex flex-col md:flex-row gap-3 md:text-end mt-3 md:mt-0 w-2/3 lg:w-1/3">
-      <input 
-      bind:value={userSearch} 
-      class="px-3 py-1 rounded-xl w-full md:w-1/2" 
-      placeholder="search..." 
-    />
-    <select 
-        bind:value={sortOrder} 
+    <div
+      class="flex flex-col md:flex-row gap-3 md:text-end mt-3 md:mt-0 w-2/3 lg:w-1/3"
+    >
+      <input
+        bind:value={userSearch}
+        class="px-3 py-1 rounded-xl w-full md:w-1/2"
+        placeholder="search..."
+      />
+      <select
+        bind:value={sortOrder}
         class="px-3 py-1 rounded-xl border bg-white text-gray-700 w-full md:w-1/2"
       >
         <option value="newest">Newest</option>

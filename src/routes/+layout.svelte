@@ -1,7 +1,10 @@
+<script context="module"></script>
+
 <script lang="ts">
   import "../app.css";
   import { onMount } from "svelte";
   import { page } from "$app/stores";
+  export const prerender = true;
 
   const currentYear = new Date().getFullYear();
 

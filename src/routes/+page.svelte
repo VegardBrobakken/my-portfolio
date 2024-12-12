@@ -1,4 +1,8 @@
-<script>
+<script context="module"></script>
+
+<script lang="ts">
+  export const prerender = true;
+
   const birthDate = new Date("2002-05-25");
   const today = new Date();
 

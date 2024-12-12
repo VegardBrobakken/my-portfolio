@@ -1,4 +1,7 @@
+<script context="module"></script>
+
 <script lang="ts">
+  export const prerender = true;
   import emailjs from "@emailjs/browser";
 
   const service_id = "service_p04rw0i";
