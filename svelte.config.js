@@ -8,10 +8,13 @@ const config = {
 	preprocess: vitePreprocess(),
 
 	kit: {
-		// adapter-auto only supports some environments, see https://svelte.dev/docs/kit/adapter-auto for a list.
-		// If your environment is not supported, or you settled on a specific environment, switch out the adapter.
-		// See https://svelte.dev/docs/kit/adapters for more information about adapters.
-		adapter: adapter(),
+		// Other kit configurations
+		adapter: adapter({
+			// If you're deploying to GitHub Pages, make sure to specify the base path
+			pages: 'build',  // Directory where the build files are stored
+			assets: 'build', // Same as above
+			fallback: null // Ensure there's no fallback for SPA routing
+		  }),
 		paths: {
 			base: '/my-portfolio', // Replace with your repo name
 		  }
