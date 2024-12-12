@@ -30,7 +30,7 @@
   };
 </script>
 
-<section class="w-4/5 mx-auto">
+<section class="w-4/5 mx-auto mb-12">
   <form
     on:submit={sendEmail}
     id="contact-form"

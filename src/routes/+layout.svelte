@@ -118,7 +118,7 @@
 </main>
 
 <footer
-  class="bg-slate-900 text-white p-4 text-center mt-16 flex items-center justify-center md:justify-between md:flex-row"
+  class="bg-slate-900 text-white p-4 text-center mt-28 flex items-center justify-center md:justify-between md:flex-row"
 >
   <div class="p-4 hidden md:block"></div>
   <p>© {currentYear} Vegard Brobakken</p>

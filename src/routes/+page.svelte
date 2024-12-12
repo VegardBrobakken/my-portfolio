@@ -35,9 +35,10 @@
   <h2 class="uppercase">About me</h2>
   <p class="mt-2">
     I am a {age} year old student pursuing a bachelor's degree in frontend and mobile
-    development at Kristiania University in Oslo. Currently, I work as a back office
-    engineer at NEP Norway and have previous experience in sales. I aspire to become
-    a full-stack developer and am always eager to embrace new opportunities.
+    development at Kristiania University College in Oslo. I aspire to become a full-stack
+    developer and am always eager to embrace new opportunities. If you are looking
+    for a cheap and reliable personal website or for a small company, contact me
+    for a non-binding offer.
   </p>
   <a href="/contact">
     <button
@@ -63,8 +64,8 @@
         <h3 class="text-lg font-bold text-orange-400">iOS NewsApp</h3>
         <p class="mt-3 mb-3">
           iOS news app developed for PG5602 - iOS programming exam at Kristiania
-          University. Focus on fetching data from newsapi.org and handling it in
-          SwiftData.
+          University College. Focus on fetching data from newsapi.org and
+          handling it in SwiftData.
         </p>
         <p class="mt-auto italic">
           Link: <a
@@ -90,7 +91,7 @@
         <p class="mt-3 mb-3">
           Graphical user interface for the open source memory forensics tool
           "Volatility3". Developed together with 7 other students as part of the
-          PRO202 - Agile Methods exam at Kristiania University.
+          PRO202 - Agile Methods exam at University.
         </p>
         <p class="mt-auto italic">
           Link: <a
