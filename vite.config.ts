@@ -5,6 +5,6 @@ export default defineConfig({
 	plugins: [sveltekit()],
 	base: "/my-portfolio",
 	build: {
-		outDir: "dist"
+		outDir: "build"
 	}
 });
