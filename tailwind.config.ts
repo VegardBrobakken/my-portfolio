@@ -5,9 +5,14 @@ export default {
 
   theme: {
     extend: {
-
         fontFamily: {
           sans: ['Roboto', 'sans-serif'],
+        },
+        colors: {
+          customDarkBrown: "#54473F2", 
+          customLightBrown: "#9A7E6F",
+          customGreen: "#CBD2A4",
+          customLightGreen: "E9EED9"
         },
     }
   },

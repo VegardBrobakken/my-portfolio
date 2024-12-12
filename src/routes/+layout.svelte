@@ -124,7 +124,7 @@
   <p>© {currentYear} Vegard Brobakken</p>
   <div class="flex flex-row gap-3">
     <a
-      class="hover:text-orange-400 transition"
+      class="hover:text-orange-400 hover:scale-110 transition"
       href="https://github.com/VegardBrobakken"
     >
       <img
@@ -134,7 +134,7 @@
       />
     </a>
     <a
-      class="hover:text-orange-400 transition"
+      class="hover:text-orange-400 hover:scale-110 transition"
       href="https://www.linkedin.com/in/vegard-brobakken-68065a257/"
     >
       <img src="/images/projects/linkedin.png" alt="GitHub logo." />
